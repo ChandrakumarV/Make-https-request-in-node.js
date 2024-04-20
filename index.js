@@ -4,7 +4,7 @@ const https = require("https");
 const app = express();
 
 app.get("/", (req, res) => {
-  https.get("https://jsonplaceholder.typicode.com/todos/39", (response) => {
+  https.get("https://jsonplaceholder.typicode.com/todos/1", (response) => {
     console.log(response.statusCode);
 
     response.on("data", (data) => {
